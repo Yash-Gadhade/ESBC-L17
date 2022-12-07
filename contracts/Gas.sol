@@ -23,7 +23,12 @@ contract Gas {
     uint256 highestNumber2;
 
     function updateNumberOptimized(uint256 countValue) public {
-        // TODO
+        uint256 tempNumber = highestNumber2;
+        while (countValue > highestNumber1) {
+            countValue--;
+            tempNumber++;
+        }
+        highestNumber2 = tempNumber;
     }
 
     struct Packed {
