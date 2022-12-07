@@ -55,7 +55,7 @@ async function comparePacking() {
   );
 }
 
-compareDeploy().catch((error) => {
+comparePacking().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
